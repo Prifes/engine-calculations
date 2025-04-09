@@ -1,4 +1,5 @@
-#pragma once
+#pragma 
+#ifdef __GRAPHICS__
 #include <vector>
 #include <string>
 #include "raylib.h"
@@ -27,3 +28,4 @@ private:
     float ConvertY_(float y) const;
     void DrawCoordSys_();
 };
+#endif

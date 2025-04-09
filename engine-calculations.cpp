@@ -2,8 +2,13 @@
 #include <math.h>
 #include "file_handler.h"
 #include "plot.h"
-#include "raylib.h"
 
+//#define __GRAPHICS
+#ifdef __GRAPHICS__
+#include "raylib.h"
+#endif
+
+static constexpr double PI = 3.14159265358979323846;
 static constexpr int p_sea_level = 101325;
 static constexpr float g = 9.81;
 static constexpr float air_molar_mass = 0.02896968;
@@ -94,18 +99,24 @@ int main() {
 
 	// Initializing graphics
 	std::cout << "\nTask4\n";
+
+	#ifdef __GRAPHICS__
 	SetTraceLogLevel(LOG_ERROR);
 	InitWindow(1500, 750, "Altitude - Thrust Plots");
 	SetTargetFPS(10);
+
 	Plot thrust_to_height(0, 0, 750, 750, "km", "kN", RED);
 	Plot thrust_coefficient_to_height(750, 0, 750, 750, "km", "", BLUE);
+	#endif
 
 	// Calculating plot values
 	const double w = (data.F0 - (p_exit - p_sea_level) * A_exit) / m_dot;
 	for (double h = data.h0; h <= data.h1; h += (data.h1 - data.h0) / 20.0f) {
 		const double p_env = height_to_pressure(h);
 		const double thrust = w * m_dot + (p_exit - p_env) * A_exit;
+		#ifdef __GRAPHICS__
 		thrust_to_height.AddPoint(h / 1000, thrust / 1000);
+		#endif
 		std::cout << "F(" << h << " m) = " << thrust / 1000 << " kN; ";
 
 		const double thrust_coefficient = sqrt(
@@ -113,10 +124,13 @@ int main() {
 			pow(2.0f / (data.kap + 1.0f), (data.kap + 1.0f) / (data.kap - 1.0f)) *
 			(1.0f - pow(p_exit / data.p1, (data.kap - 1.0f) / data.kap))
 		) + ((p_exit - p_env) / data.p1) * (A_exit / A_throat);
+		#ifdef __GRAPHICS__
 		thrust_coefficient_to_height.AddPoint(h / 1000, thrust_coefficient);
+		#endif
 		std::cout << "CF(" << h << " m) = " << thrust_coefficient << "\n";
 	}
 
+	#ifdef __GRAPHICS__
 	//Drawing plots
 	while (!WindowShouldClose()) {
 		BeginDrawing();
@@ -127,6 +141,8 @@ int main() {
 	}
 
 	CloseWindow();
+
+	#endif
 
 	return 0;
 

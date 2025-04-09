@@ -1,3 +1,4 @@
+#ifdef __GRAPHICS__
 #include "plot.h"
 
 Plot::Plot(int x0, int y0, int width, int height, 
@@ -89,3 +90,4 @@ void Plot::DrawCoordSys_() {
         }
     }
 }
+#endif
