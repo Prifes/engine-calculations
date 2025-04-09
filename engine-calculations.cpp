@@ -2,13 +2,13 @@
 #include <math.h>
 #include "file_handler.h"
 #include "plot.h"
+#include "defines.h"
 
-//#define __GRAPHICS
 #ifdef __GRAPHICS__
 #include "raylib.h"
 #endif
 
-static constexpr double PI = 3.14159265358979323846;
+static constexpr double _PI = 3.14159265358979323846;
 static constexpr int p_sea_level = 101325;
 static constexpr float g = 9.81;
 static constexpr float air_molar_mass = 0.02896968;
@@ -74,7 +74,7 @@ int main() {
 		<< "Characteristic speed = " << c_star << " m/s\n";
 
 	// Calculating throat paramters
-	const double D_throat = sqrt(A_throat / PI) * 2.0f;
+	const double D_throat = sqrt(A_throat / _PI) * 2.0f;
 	const double T_throat = 2 * data.T1 / (data.kap + 1.0f);
 	const double p_throat = data.p1 * pow(2.0f / (data.kap + 1.0f), data.kap / (data.kap - 1.0f));
 	const double V_throat = data.R * T_throat / p_throat;

@@ -132,6 +132,7 @@
     <ClCompile Include="plot.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="defines.h" />
     <ClInclude Include="file_handler.h" />
     <ClInclude Include="plot.h" />
   </ItemGroup>

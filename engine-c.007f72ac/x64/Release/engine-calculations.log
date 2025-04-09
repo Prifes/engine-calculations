@@ -4,6 +4,7 @@ D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\engine-calculations.c
 D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\engine-calculations.cpp(14,39): warning C4305: 'initializing': truncation from 'double' to 'const float'
 D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\engine-calculations.cpp(15,35): warning C4305: 'initializing': truncation from 'double' to 'const float'
 D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\engine-calculations.cpp(16,26): warning C4305: 'initializing': truncation from 'double' to 'const float'
+  plot.cpp
   Generating code
   Compiler switch has changed, fall back to full compilation.
   All 159 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.

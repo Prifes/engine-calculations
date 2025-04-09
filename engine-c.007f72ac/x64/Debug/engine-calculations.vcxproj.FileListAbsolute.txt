@@ -1,3 +1,0 @@
-D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\x64\Debug\raylib.dll
-D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\x64\Debug\glfw3.dll
-D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\engine-c.007f72ac\x64\Debug\engine-c.36065218.Up2Date

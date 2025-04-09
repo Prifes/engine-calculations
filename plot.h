@@ -1,5 +1,7 @@
-#pragma 
+#pragma once
+#include "defines.h"
 #ifdef __GRAPHICS__
+
 #include <vector>
 #include <string>
 #include "raylib.h"

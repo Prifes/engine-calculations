@@ -1,3 +1,4 @@
+#include "defines.h"
 #ifdef __GRAPHICS__
 #include "plot.h"
 
