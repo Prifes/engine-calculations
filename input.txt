@@ -1,0 +1,11 @@
+operating_time=520
+chamber_pressure=206.703
+chamber_temperature=3300
+specific_heat_ratio=1.185
+specific_gas_constant=594
+launch_mass=252110
+MECO_mass=8777
+launch_height=0
+MECO_height=190
+launch_thrust=1668
+expansion_ratio=77.5

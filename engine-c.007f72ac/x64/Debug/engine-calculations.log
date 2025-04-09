@@ -1,0 +1,20 @@
+﻿  engine-calculations.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\expected(11): warning STL4038: The contents of <expected> are available only with C++23 or later.
+D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\engine-calculations.cpp(91,46): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\engine-calculations.cpp(91,31): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\engine-calculations.cpp(99,51): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\engine-calculations.cpp(99,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  plot.cpp
+D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\plot.cpp(25,46): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\plot.cpp(25,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\plot.cpp(28,60): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\plot.cpp(28,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\plot.cpp(32,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\plot.cpp(36,17): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\plot.cpp(55,32): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\plot.cpp(67,21): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\plot.cpp(76,32): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  engine-calculations.vcxproj -> D:\Uni\4-Rakéták_Rakétahajtóművek\engine-calculations\x64\Debug\engine-calculations.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
